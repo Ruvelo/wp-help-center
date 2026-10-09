@@ -1,0 +1,33 @@
+name: release
+
+# On a version tag: build ruvelo-help-center.zip and attach it to the GitHub release.
+# The Playground blueprint installs the plugin from releases/latest/download/ruvelo-help-center.zip.
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          coverage: none
+          tools: wp-cli
+
+      - name: Build the zip
+        run: bash bin/build-zip.sh
+
+      - name: Attach it to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1 || gh release create "$GITHUB_REF_NAME" --title "$GITHUB_REF_NAME" --notes "See CHANGELOG.md."
+          gh release upload "$GITHUB_REF_NAME" build/ruvelo-help-center.zip --clobber
