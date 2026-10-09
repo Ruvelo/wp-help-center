@@ -1,0 +1,35 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "ruvelo/help-outline",
+    "title": "On this page",
+    "category": "ruvelo-help-center",
+    "icon": "list-view",
+    "description": "The article’s headings, to jump to a section.",
+    "keywords": [
+        "help",
+        "outline",
+        "table of contents",
+        "toc"
+    ],
+    "textdomain": "ruvelo-help-center",
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": ""
+        },
+        "minHeadings": {
+            "type": "integer",
+            "default": 2
+        }
+    },
+    "usesContext": [
+        "postId",
+        "postType"
+    ],
+    "supports": {
+        "html": false
+    },
+    "editorScript": "ruvelo-help-center-editor",
+    "style": "ruvelo-help-center"
+}

@@ -1,0 +1,52 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "ruvelo/help-search",
+    "title": "Help search",
+    "category": "ruvelo-help-center",
+    "icon": "search",
+    "description": "A “How can we help?” search box that suggests articles as people type.",
+    "keywords": [
+        "help",
+        "search",
+        "faq",
+        "knowledge base"
+    ],
+    "textdomain": "ruvelo-help-center",
+    "attributes": {
+        "variant": {
+            "type": "string",
+            "enum": [
+                "hero",
+                "compact"
+            ],
+            "default": "hero"
+        },
+        "headline": {
+            "type": "string",
+            "default": ""
+        },
+        "intro": {
+            "type": "string",
+            "default": ""
+        },
+        "placeholder": {
+            "type": "string",
+            "default": ""
+        },
+        "showPopular": {
+            "type": "boolean",
+            "default": true
+        }
+    },
+    "supports": {
+        "align": [
+            "wide",
+            "full"
+        ],
+        "html": false
+    },
+    "editorScript": "ruvelo-help-center-editor",
+    "viewScript": "ruvelo-help-center",
+    "style": "ruvelo-help-center"
+}

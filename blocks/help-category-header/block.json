@@ -1,0 +1,20 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "ruvelo/help-category-header",
+    "title": "Help category header",
+    "category": "ruvelo-help-center",
+    "icon": "category",
+    "description": "The current category’s icon, name and description.",
+    "keywords": [
+        "help",
+        "category"
+    ],
+    "textdomain": "ruvelo-help-center",
+    "attributes": {},
+    "supports": {
+        "html": false
+    },
+    "editorScript": "ruvelo-help-center-editor",
+    "style": "ruvelo-help-center"
+}

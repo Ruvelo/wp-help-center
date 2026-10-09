@@ -1,0 +1,17 @@
+parameters:
+    level: 8
+    paths:
+        - ruvelo-help-center.php
+        - uninstall.php
+        - src
+        - templates
+        - tests
+    bootstrapFiles:
+        - tests/phpstan-bootstrap.php
+    scanFiles:
+        - tests/stubs/wp-cli.php
+    scanDirectories:
+        - vendor/wp-phpunit/wp-phpunit/includes
+    excludePaths:
+        - tests/wp-tests-config.php
+        - tests/stubs

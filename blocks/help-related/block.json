@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "ruvelo/help-related",
+    "title": "Related help articles",
+    "category": "ruvelo-help-center",
+    "icon": "admin-links",
+    "description": "Articles to read next: the ones an editor picked, or others in the same category.",
+    "keywords": [
+        "help",
+        "related"
+    ],
+    "textdomain": "ruvelo-help-center",
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": ""
+        },
+        "limit": {
+            "type": "integer",
+            "default": 4
+        }
+    },
+    "usesContext": [
+        "postId",
+        "postType"
+    ],
+    "supports": {
+        "html": false
+    },
+    "editorScript": "ruvelo-help-center-editor",
+    "style": "ruvelo-help-center"
+}

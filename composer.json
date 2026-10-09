@@ -1,0 +1,92 @@
+{
+    "name": "ruvelo/wp-help-center",
+    "description": "A free help center for WordPress, ready for AI agents: articles in categories, instant search, \"Was this helpful?\", Markdown and llms.txt, abilities for agents.",
+    "keywords": [
+        "wordpress",
+        "wordpress-plugin",
+        "help-center",
+        "knowledge-base",
+        "documentation",
+        "faq",
+        "llms-txt",
+        "abilities-api",
+        "mcp"
+    ],
+    "license": "GPL-2.0-or-later",
+    "type": "wordpress-plugin",
+    "homepage": "https://ruvelo.github.io/wp-help-center/",
+    "authors": [
+        {
+            "name": "François Bultez",
+            "homepage": "https://github.com/francoisbultez",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "composer/installers": "^2.3"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "laravel/pint": "^1.18",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^9.6",
+        "szepeviktor/phpstan-wordpress": "^2.0",
+        "wp-coding-standards/wpcs": "^3.1",
+        "wp-phpunit/wp-phpunit": "^7.0",
+        "yoast/phpunit-polyfills": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ruvelo\\WP\\HelpCenter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ruvelo\\WP\\HelpCenter\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": [
+            "pint --test",
+            "phpcs"
+        ],
+        "format": [
+            "pint",
+            "phpcbf || true"
+        ],
+        "analyse": "phpstan analyse --memory-limit=1G",
+        "check": [
+            "@lint",
+            "@analyse",
+            "@test"
+        ],
+        "zip": "bash bin/build-zip.sh",
+        "pot": "wp i18n make-pot . languages/ruvelo-help-center.pot --exclude=.wp,vendor,tests,build,node_modules,demo"
+    },
+    "scripts-descriptions": {
+        "test": "Run the integration tests against a WordPress test install",
+        "lint": "Check code style (Pint) and WordPress security, database and i18n rules (PHPCS)",
+        "format": "Fix code style",
+        "analyse": "Run static analysis (PHPStan level 8)",
+        "check": "Lint, analyse and test: what CI runs",
+        "zip": "Build the distributable ruvelo-help-center.zip into build/",
+        "pot": "Regenerate the translation template"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/Ruvelo/wp-help-center/issues",
+        "source": "https://github.com/Ruvelo/wp-help-center"
+    }
+}

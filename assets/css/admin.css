@@ -1,0 +1,273 @@
+/*
+ * Ruvelo Help Center: the plugin's own admin screens. WordPress admin first,
+ * with the Ruvelo accent in the few places that carry meaning.
+ */
+
+.ruvelo-hc-admin,
+.post-type-ruvelo_article,
+.taxonomy-ruvelo_help_category {
+	--ruvelo-hc-accent: #3d4eff;
+	--ruvelo-hc-accent-soft: #eef0ff;
+	--ruvelo-hc-line: #e4e4ef;
+	--ruvelo-hc-muted: #f0f0f7;
+	--ruvelo-hc-text-3: #646478;
+	--ruvelo-hc-success: #167a4a;
+	--ruvelo-hc-warning: #9a5c00;
+	--ruvelo-hc-warning-soft: #fff4e0;
+	--ruvelo-hc-danger: #d42f45;
+}
+
+/* Article list */
+.post-type-ruvelo_article .column-ruvelo_views {
+	width: 6rem;
+	text-align: right;
+}
+
+.post-type-ruvelo_article .column-ruvelo_helpful {
+	width: 12rem;
+}
+
+.post-type-ruvelo_article .column-ruvelo_updated {
+	width: 9rem;
+}
+
+.post-type-ruvelo_article .column-taxonomy-ruvelo_help_category {
+	width: 11rem;
+}
+
+.ruvelo-hc-num {
+	font-variant-numeric: tabular-nums;
+}
+
+.ruvelo-hc-muted {
+	color: var(--ruvelo-hc-text-3);
+}
+
+.ruvelo-hc-small {
+	font-size: 12px;
+}
+
+.ruvelo-hc-meter {
+	display: inline-block;
+	width: 3.25rem;
+	height: 6px;
+	border-radius: 999px;
+	background: var(--ruvelo-hc-muted);
+	vertical-align: middle;
+	margin-right: 0.45rem;
+	overflow: hidden;
+}
+
+.ruvelo-hc-meter span {
+	display: block;
+	height: 100%;
+	border-radius: inherit;
+	background: var(--ruvelo-hc-success);
+}
+
+.ruvelo-hc-meter--ok span {
+	background: #c98a00;
+}
+
+.ruvelo-hc-meter--bad span {
+	background: var(--ruvelo-hc-danger);
+}
+
+.ruvelo-hc-chip {
+	display: inline-block;
+	border-radius: 999px;
+	padding: 0 0.55rem;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 1.8;
+	background: var(--ruvelo-hc-accent-soft);
+	color: var(--ruvelo-hc-accent);
+}
+
+.ruvelo-hc-chip--draft {
+	background: var(--ruvelo-hc-warning-soft);
+	color: var(--ruvelo-hc-warning);
+}
+
+/* Category screens */
+.ruvelo-hc-icon-input {
+	width: 5rem !important;
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+.taxonomy-ruvelo_help_category .column-ruvelo_icon {
+	width: 2.5rem;
+}
+
+.taxonomy-ruvelo_help_category .column-ruvelo_order {
+	width: 5rem;
+}
+
+.ruvelo-hc-term-icon {
+	display: inline-grid;
+	place-items: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 8px;
+	background: var(--ruvelo-hc-accent-soft);
+	font-size: 1.05rem;
+}
+
+/* Meta boxes */
+.ruvelo-hc-related-picker {
+	max-height: 18rem;
+	overflow-y: auto;
+	border: 1px solid var(--ruvelo-hc-line);
+	border-radius: 6px;
+	padding: 0.25rem 0.6rem 0.5rem;
+}
+
+.ruvelo-hc-related-picker fieldset {
+	margin-top: 0.5rem;
+}
+
+.ruvelo-hc-related-picker legend {
+	font-weight: 600;
+	font-size: 12px;
+	padding: 0;
+}
+
+.ruvelo-hc-related-picker label {
+	display: block;
+	margin: 0.2rem 0;
+}
+
+.ruvelo-hc-stats {
+	margin: 0;
+}
+
+/* Feedback, settings and set-up */
+.ruvelo-hc-admin .ruvelo-hc-lede {
+	font-size: 14px;
+	max-width: 46rem;
+	color: #50575e;
+}
+
+.ruvelo-hc-admin .ruvelo-hc-table {
+	max-width: 60rem;
+	border-radius: 8px;
+}
+
+.ruvelo-hc-admin .ruvelo-hc-table .num {
+	text-align: right;
+	font-variant-numeric: tabular-nums;
+	width: 7rem;
+}
+
+.ruvelo-hc-admin .ruvelo-hc-table td,
+.ruvelo-hc-admin .ruvelo-hc-table th {
+	vertical-align: middle;
+	padding: 10px 12px;
+}
+
+.ruvelo-hc-summary {
+	max-width: 60rem;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	padding: 4px 18px;
+	margin: 16px 0;
+}
+
+.ruvelo-hc-comments {
+	max-width: 60rem;
+	margin: 0;
+}
+
+.ruvelo-hc-comment {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	padding: 12px 16px;
+	margin: 0 0 10px;
+}
+
+.ruvelo-hc-comment__meta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 4px 6px;
+}
+
+.ruvelo-hc-comment__remove {
+	margin-left: auto;
+}
+
+.ruvelo-hc-comment blockquote {
+	margin: 8px 0 0;
+	padding: 8px 12px;
+	background: #f6f7f7;
+	border-left: 3px solid var(--ruvelo-hc-accent);
+	border-radius: 0 6px 6px 0;
+	font-size: 14px;
+}
+
+.ruvelo-hc-empty {
+	max-width: 60rem;
+	border: 1px dashed #c3c4c7;
+	border-radius: 8px;
+	padding: 8px 16px;
+	color: #646970;
+	background: #fff;
+}
+
+.ruvelo-hc-steps {
+	list-style: none;
+	margin: 20px 0 0;
+	padding: 0;
+	max-width: 48rem;
+	counter-reset: ruvelo-step;
+}
+
+.ruvelo-hc-step {
+	counter-increment: ruvelo-step;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 10px;
+	padding: 4px 20px 8px;
+	margin: 0 0 12px;
+}
+
+.ruvelo-hc-step h2 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 15px;
+}
+
+.ruvelo-hc-step__mark {
+	display: grid;
+	place-items: center;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: var(--ruvelo-hc-accent-soft);
+	color: var(--ruvelo-hc-accent);
+	font-size: 12px;
+	font-weight: 600;
+	flex: none;
+}
+
+.ruvelo-hc-step__mark:empty::before {
+	content: counter(ruvelo-step);
+}
+
+.ruvelo-hc-step.is-done .ruvelo-hc-step__mark {
+	background: #e8f8ef;
+	color: var(--ruvelo-hc-success);
+}
+
+.ruvelo-hc-abilities {
+	margin: 0 0 8px 18px;
+	list-style: disc;
+}
+
+.ruvelo-hc-base {
+	width: 10rem !important;
+}

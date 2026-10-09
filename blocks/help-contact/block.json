@@ -1,0 +1,41 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "ruvelo/help-contact",
+    "title": "Still need help?",
+    "category": "ruvelo-help-center",
+    "icon": "email",
+    "description": "A box that points people to your support team. Hidden until you set a contact address in the settings.",
+    "keywords": [
+        "help",
+        "contact",
+        "support"
+    ],
+    "textdomain": "ruvelo-help-center",
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": ""
+        },
+        "text": {
+            "type": "string",
+            "default": ""
+        },
+        "label": {
+            "type": "string",
+            "default": ""
+        },
+        "url": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "supports": {
+        "align": [
+            "wide"
+        ],
+        "html": false
+    },
+    "editorScript": "ruvelo-help-center-editor",
+    "style": "ruvelo-help-center"
+}

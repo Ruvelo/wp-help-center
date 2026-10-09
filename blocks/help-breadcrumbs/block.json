@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "ruvelo/help-breadcrumbs",
+    "title": "Help breadcrumbs",
+    "category": "ruvelo-help-center",
+    "icon": "arrow-right-alt2",
+    "description": "Where the current page sits in the help center.",
+    "keywords": [
+        "help",
+        "breadcrumbs"
+    ],
+    "textdomain": "ruvelo-help-center",
+    "attributes": {},
+    "usesContext": [
+        "postId",
+        "postType"
+    ],
+    "supports": {
+        "html": false
+    },
+    "editorScript": "ruvelo-help-center-editor",
+    "style": "ruvelo-help-center"
+}

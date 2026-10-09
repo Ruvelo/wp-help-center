@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "ruvelo/help-navigation",
+    "title": "Help menu",
+    "category": "ruvelo-help-center",
+    "icon": "menu",
+    "description": "The help categories and their articles, with the current one marked.",
+    "keywords": [
+        "help",
+        "navigation",
+        "sidebar"
+    ],
+    "textdomain": "ruvelo-help-center",
+    "attributes": {
+        "showSearch": {
+            "type": "boolean",
+            "default": true
+        }
+    },
+    "usesContext": [
+        "postId",
+        "postType"
+    ],
+    "supports": {
+        "html": false
+    },
+    "editorScript": "ruvelo-help-center-editor",
+    "viewScript": "ruvelo-help-center",
+    "style": "ruvelo-help-center"
+}

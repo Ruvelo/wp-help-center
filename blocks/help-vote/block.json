@@ -1,0 +1,32 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "ruvelo/help-vote",
+    "title": "Was this helpful?",
+    "category": "ruvelo-help-center",
+    "icon": "thumbs-up",
+    "description": "Yes and No buttons under an article, with a short comment box after a No.",
+    "keywords": [
+        "help",
+        "feedback",
+        "vote",
+        "helpful"
+    ],
+    "textdomain": "ruvelo-help-center",
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "usesContext": [
+        "postId",
+        "postType"
+    ],
+    "supports": {
+        "html": false
+    },
+    "editorScript": "ruvelo-help-center-editor",
+    "viewScript": "ruvelo-help-center",
+    "style": "ruvelo-help-center"
+}

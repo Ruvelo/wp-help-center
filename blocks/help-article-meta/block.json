@@ -1,0 +1,25 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "ruvelo/help-article-meta",
+    "title": "Help article details",
+    "category": "ruvelo-help-center",
+    "icon": "calendar-alt",
+    "description": "When the article was last updated, and an edit link for editors.",
+    "keywords": [
+        "help",
+        "updated",
+        "date"
+    ],
+    "textdomain": "ruvelo-help-center",
+    "attributes": {},
+    "usesContext": [
+        "postId",
+        "postType"
+    ],
+    "supports": {
+        "html": false
+    },
+    "editorScript": "ruvelo-help-center-editor",
+    "style": "ruvelo-help-center"
+}

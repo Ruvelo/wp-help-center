@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "ruvelo/help-categories",
+    "title": "Help categories",
+    "category": "ruvelo-help-center",
+    "icon": "category",
+    "description": "A card for each help category, with its icon, description and number of articles.",
+    "keywords": [
+        "help",
+        "categories",
+        "topics"
+    ],
+    "textdomain": "ruvelo-help-center",
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": ""
+        },
+        "showDescription": {
+            "type": "boolean",
+            "default": true
+        },
+        "showCount": {
+            "type": "boolean",
+            "default": true
+        },
+        "parent": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "supports": {
+        "align": [
+            "wide",
+            "full"
+        ],
+        "html": false
+    },
+    "editorScript": "ruvelo-help-center-editor",
+    "style": "ruvelo-help-center"
+}

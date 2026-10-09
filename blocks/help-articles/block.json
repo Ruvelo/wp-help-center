@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "ruvelo/help-articles",
+    "title": "Contextual help",
+    "category": "ruvelo-help-center",
+    "icon": "editor-help",
+    "description": "A short list of help articles from one category or for a search, to put help where people get stuck.",
+    "keywords": [
+        "help",
+        "articles",
+        "contextual",
+        "faq"
+    ],
+    "textdomain": "ruvelo-help-center",
+    "attributes": {
+        "category": {
+            "type": "string",
+            "default": ""
+        },
+        "search": {
+            "type": "string",
+            "default": ""
+        },
+        "limit": {
+            "type": "integer",
+            "default": 5
+        },
+        "heading": {
+            "type": "string",
+            "default": ""
+        },
+        "variant": {
+            "type": "string",
+            "enum": [
+                "compact",
+                "list"
+            ],
+            "default": "compact"
+        }
+    },
+    "supports": {
+        "align": [
+            "wide",
+            "full"
+        ],
+        "html": false
+    },
+    "editorScript": "ruvelo-help-center-editor",
+    "style": "ruvelo-help-center"
+}

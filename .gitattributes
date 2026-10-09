@@ -1,0 +1,22 @@
+* text=auto eol=lf
+
+*.png binary
+*.ttf binary
+
+# Development files stay out of `composer require --prefer-dist` and GitHub's zips.
+/.github export-ignore
+/.wordpress-org export-ignore
+/bin export-ignore
+/demo export-ignore
+/tests export-ignore
+/.editorconfig export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/.distignore export-ignore
+/blueprint.json export-ignore
+/phpcs.xml.dist export-ignore
+/phpstan.neon.dist export-ignore
+/phpunit.xml.dist export-ignore
+/pint.json export-ignore
+/CONTRIBUTING.md export-ignore
+/README.md export-ignore
