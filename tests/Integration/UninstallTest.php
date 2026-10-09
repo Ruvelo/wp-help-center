@@ -49,7 +49,10 @@ final class UninstallTest extends TestCase
             return $query;
         }, 1);
 
+        // SQLite has no DROP TEMPORARY TABLE, which the test suite turns DROP TABLE into.
+        $GLOBALS['wpdb']->suppress_errors(true);
         Installer::uninstall();
+        $GLOBALS['wpdb']->suppress_errors(false);
 
         $this->assertNull(get_post($post->ID));
         $this->assertSame([], get_terms(['taxonomy' => ArticleType::TAXONOMY, 'hide_empty' => false, 'fields' => 'ids']));

@@ -155,6 +155,13 @@ final class Votes
         ], is_array($rows) ? $rows : []));
     }
 
+    public static function commentCount(int $articleId): int
+    {
+        global $wpdb;
+
+        return (int) $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM %i WHERE article_id = %d AND helpful = 0 AND comment IS NOT NULL AND comment <> ''", self::table(), $articleId)); // phpcs:ignore WordPress.DB.DirectDatabaseQuery -- custom table, admin list.
+    }
+
     /**
      * Articles with the most "No" votes.
      *

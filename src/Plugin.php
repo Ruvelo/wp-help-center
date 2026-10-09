@@ -39,6 +39,7 @@ final class Plugin
         add_filter('search_template_hierarchy', [Templates::class, 'searchHierarchy']);
         add_filter('template_include', [Templates::class, 'classic'], 99);
         add_filter('body_class', [Templates::class, 'bodyClass']);
+        add_filter('get_block_templates', [Templates::class, 'reindex']);
         add_action('before_delete_post', [Admin::class, 'deleted']);
         add_filter('get_entity_view_config_posttype_'.ArticleType::POST_TYPE, [self::class, 'viewConfig']);
 

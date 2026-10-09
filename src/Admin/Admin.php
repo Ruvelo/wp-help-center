@@ -108,8 +108,11 @@ final class Admin
                     esc_html(sprintf(_n('of %s vote', 'of %s votes', $helpful['total'], 'ruvelo-help-center'), number_format_i18n($helpful['total']))),
                 );
 
-                if ($helpful['no'] > 0) {
-                    echo '<br><a class="ruvelo-hc-small" href="'.esc_url(FeedbackPage::url($post->ID)).'">'.esc_html__('What readers said', 'ruvelo-help-center').'</a>';
+                $comments = $helpful['no'] > 0 ? Votes::commentCount($post->ID) : 0;
+
+                if ($comments > 0) {
+                    /* translators: %s: number of comments */
+                    echo '<br><a class="ruvelo-hc-small" href="'.esc_url(FeedbackPage::url($post->ID)).'">'.esc_html(sprintf(_n('%s comment from readers', '%s comments from readers', $comments, 'ruvelo-help-center'), number_format_i18n($comments))).'</a>';
                 }
                 break;
             case 'ruvelo_updated':

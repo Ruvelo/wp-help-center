@@ -150,6 +150,18 @@ final class Templates
     }
 
     /**
+     * Core (7.1) merges plugin-registered templates into get_block_templates() with their names as
+     * keys, while the block editor reads the result as a list ($templates[0]). Keep it a list.
+     *
+     * @param array<int|string, \WP_Block_Template> $templates
+     * @return list<\WP_Block_Template>
+     */
+    public static function reindex(array $templates): array
+    {
+        return array_values($templates);
+    }
+
+    /**
      * @param array<int, string> $classes
      * @return array<int, string>
      */
