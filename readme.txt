@@ -50,7 +50,7 @@ Ruvelo Help Center turns WordPress into a help center your customers can find an
 * **Distributed only through WordPress.org and Composer**, updated by WordPress's own updater. Never sold.
 * **Your content stays yours.** Deleting the plugin keeps your articles, categories and votes unless you turn on "Delete everything when the plugin is deleted". No scheduled tasks are left behind.
 
-Built by François Bultez at Ruvelo, and everyone who contributes. Source, issues and the developer guide: [github.com/Ruvelo/wp-help-center](https://github.com/Ruvelo/wp-help-center).
+Built by François Bultez at [Valtry](https://valtry.co.uk/?utm_source=ruvelo&utm_medium=wordpress&utm_campaign=wp-help-center), the website security scanner, and everyone who contributes. Source, issues and the developer guide: [github.com/Ruvelo/wp-help-center](https://github.com/Ruvelo/wp-help-center).
 
 == Installation ==
 

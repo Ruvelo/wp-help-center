@@ -244,7 +244,7 @@ Pull requests are welcome. Clone, `composer install`, set up the local site in [
 
 ## Credits
 
-Built by [François Bultez](https://github.com/francoisbultez) at [Ruvelo](https://github.com/Ruvelo), and everyone who [contributes](https://github.com/Ruvelo/wp-help-center/graphs/contributors). The Halyard demo content is shared with [laravel-help-center](https://github.com/Ruvelo/laravel-help-center).
+Built by [François Bultez](https://github.com/francoisbultez) at [Valtry](https://valtry.co.uk/?utm_source=ruvelo&utm_medium=github&utm_campaign=wp-help-center), the website security scanner, and everyone who [contributes](https://github.com/Ruvelo/wp-help-center/graphs/contributors). The Halyard demo content is shared with [laravel-help-center](https://github.com/Ruvelo/laravel-help-center).
 
 ## License
 
