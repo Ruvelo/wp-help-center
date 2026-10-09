@@ -90,7 +90,7 @@ final class Templates
 
         $kind = self::kind();
 
-        if ($kind === null || $kind === 'page') {
+        if ($kind === null) {
             return $template;
         }
 

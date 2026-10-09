@@ -16,10 +16,17 @@ get_header();
 
 $ruvelo_help_center_kind = Ruvelo\WP\HelpCenter\Templates\Templates::kind() ?? 'home';
 
-if ($ruvelo_help_center_kind === 'article' && have_posts()) {
+if (in_array($ruvelo_help_center_kind, ['article', 'page'], true) && have_posts()) {
     the_post();
 }
 
-echo do_blocks(Ruvelo\WP\HelpCenter\Templates\Templates::main($ruvelo_help_center_kind)); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- block output, escaped by each block.
+if ($ruvelo_help_center_kind === 'page') {
+    // The help center home page: its blocks, full width, without the theme's page title.
+    echo '<div class="ruvelo-hc-home">';
+    the_content();
+    echo '</div>';
+} else {
+    echo do_blocks(Ruvelo\WP\HelpCenter\Templates\Templates::main($ruvelo_help_center_kind)); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- block output, escaped by each block.
+}
 
 get_footer();

@@ -538,6 +538,19 @@ body.ruvelo-hc-scheme-dark.ruvelo-hc-page {
 	grid-template-columns: 16rem minmax(0, 1fr) 13rem;
 }
 
+/* Classic themes (no theme.json) get an extra wrapper inside group blocks; let the grid see through it. */
+.ruvelo-hc-docs > .wp-block-group__inner-container,
+.ruvelo-hc-home > .wp-block-group__inner-container {
+	display: contents;
+}
+
+/* Classic themes often cap the width of everything in their main column; the docs layout needs the room. */
+body .ruvelo-hc.ruvelo-hc-docs {
+	display: grid;
+	width: 100%;
+	max-width: calc(var(--wp--style--global--wide-size, 84rem) + 2 * var(--ruvelo-hc-gutter));
+}
+
 .ruvelo-hc-docs > * {
 	margin-block: 0 !important;
 }
