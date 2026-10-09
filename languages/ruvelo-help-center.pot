@@ -1,0 +1,1506 @@
+# Copyright (C) 2026 Ruvelo
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ruvelo Help Center 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/Ruvelo/wp-help-center/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-09T06:09:24+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: ruvelo-help-center\n"
+
+#. Plugin Name of the plugin
+#: ruvelo-help-center.php
+msgid "Ruvelo Help Center"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: ruvelo-help-center.php
+msgid "https://github.com/Ruvelo/wp-help-center"
+msgstr ""
+
+#. Description of the plugin
+#: ruvelo-help-center.php
+msgid "A help center your customers can find answers in, and AI agents can read: articles in categories, instant search, \"Was this helpful?\", Markdown and llms.txt."
+msgstr ""
+
+#. Author of the plugin
+#: ruvelo-help-center.php
+msgid "Ruvelo"
+msgstr ""
+
+#. Author URI of the plugin
+#: ruvelo-help-center.php
+msgid "https://github.com/Ruvelo"
+msgstr ""
+
+#: src/Admin/Admin.php:49
+#: src/Admin/FeedbackPage.php:54
+msgid "Reader feedback"
+msgstr ""
+
+#: src/Admin/Admin.php:49
+#: src/Admin/Admin.php:194
+msgid "Feedback"
+msgstr ""
+
+#: src/Admin/Admin.php:50
+#: src/Admin/SettingsPage.php:170
+msgid "Help center settings"
+msgstr ""
+
+#: src/Admin/Admin.php:50
+#: src/Admin/Admin.php:315
+#: src/Admin/SetupPage.php:80
+#: assets/js/blocks-editor.js:111
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/Admin.php:51
+#: src/Admin/Admin.php:305
+#: src/Admin/SetupPage.php:41
+msgid "Get started"
+msgstr ""
+
+#: src/Admin/Admin.php:75
+msgid "Views"
+msgstr ""
+
+#: src/Admin/Admin.php:76
+#: src/Admin/FeedbackPage.php:92
+msgid "Helpful"
+msgstr ""
+
+#: src/Admin/Admin.php:77
+msgid "Updated"
+msgstr ""
+
+#: src/Admin/Admin.php:98
+#: src/Admin/Admin.php:247
+msgid "No votes yet"
+msgstr ""
+
+#. translators: %s: number of votes
+#: src/Admin/Admin.php:108
+#, php-format
+msgid "of %s vote"
+msgid_plural "of %s votes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of comments
+#: src/Admin/Admin.php:115
+#, php-format
+msgid "%s comment from readers"
+msgid_plural "%s comments from readers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/Admin.php:170
+msgid "Filter by category"
+msgstr ""
+
+#: src/Admin/Admin.php:171
+#: src/Content/ArticleType.php:45
+msgid "All categories"
+msgstr ""
+
+#: src/Admin/Admin.php:202
+#: src/Blocks/Render.php:496
+#: assets/js/blocks-editor.js:68
+msgid "Related articles"
+msgstr ""
+
+#: src/Admin/Admin.php:203
+msgid "How it’s doing"
+msgstr ""
+
+#: src/Admin/Admin.php:211
+msgid "Pick up to four to show under the article. With none picked, others in the same category show."
+msgstr ""
+
+#. translators: %s: number of views
+#: src/Admin/Admin.php:244
+#, php-format
+msgid "%s view"
+msgid_plural "%s views"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: percentage, 2: number of votes
+#: src/Admin/Admin.php:250
+#, php-format
+msgid "%1$d%% found it helpful (%2$s votes)"
+msgstr ""
+
+#: src/Admin/Admin.php:256
+#: src/Admin/FeedbackPage.php:130
+msgid "What readers said"
+msgstr ""
+
+#: src/Admin/Admin.php:260
+msgid "View as Markdown"
+msgstr ""
+
+#: src/Admin/Admin.php:303
+msgid "Your help center is live at its address already. Give it a home page you can edit, with a search box and your categories:"
+msgstr ""
+
+#: src/Admin/CategoryFields.php:35
+#: src/Admin/CategoryFields.php:53
+#: src/Admin/CategoryFields.php:96
+msgid "Icon"
+msgstr ""
+
+#: src/Admin/CategoryFields.php:37
+#: src/Admin/CategoryFields.php:56
+msgid "An emoji shown on the category’s card and in the menu, like 🧾 or 🔐."
+msgstr ""
+
+#: src/Admin/CategoryFields.php:40
+#: src/Admin/CategoryFields.php:60
+#: src/Admin/CategoryFields.php:103
+msgid "Position"
+msgstr ""
+
+#: src/Admin/CategoryFields.php:42
+#: src/Admin/CategoryFields.php:63
+msgid "Lower numbers come first."
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:57
+msgid "All articles"
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:63
+msgid "Comment removed. The vote still counts."
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:69
+msgid "Readers who answer “No” to “Was this article helpful?” can say what was missing. Start with the articles at the top."
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:81
+msgid "Most “No” votes"
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:84
+msgid "No “No” votes yet. When readers say an article didn’t help, it shows up here."
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:90
+msgid "Article"
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:91
+#: src/Blocks/Render.php:297
+msgid "No"
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:93
+msgid "Comments"
+msgstr ""
+
+#. translators: 1: Yes votes, 2: No votes, 3: views
+#: src/Admin/FeedbackPage.php:119
+#, php-format
+msgid "%1$s yes, %2$s no, %3$s views"
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:120
+msgid "Edit the article"
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:121
+msgid "View it"
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:133
+msgid "No comments yet."
+msgstr ""
+
+#. translators: %s: how long ago, like "3 hours"
+#: src/Admin/FeedbackPage.php:150
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:156
+msgid "Remove comment"
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:166
+msgid "Newer"
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:170
+msgid "Older"
+msgstr ""
+
+#: src/Admin/FeedbackPage.php:193
+msgid "That link has expired. Go back, reload the page and try again."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:39
+msgid "Name and address"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:40
+msgid "Name"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:40
+msgid "Shown in breadcrumbs, page titles and llms.txt, like “Halyard Help Center”."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:41
+msgid "Address"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:41
+msgid "Articles live at this address, like /help/download-an-invoice/."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:42
+#: assets/js/blocks-editor.js:26
+msgid "Headline"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:42
+msgid "The big question on the home page."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:43
+#: assets/js/blocks-editor.js:27
+msgid "Line under the headline"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:44
+msgid "Popular articles on the home page"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:44
+msgid "0 hides them."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:46
+msgid "“Still need help?”"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:47
+msgid "Contact page"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:47
+msgid "A contact form, chat or ticket page. Leave it and the email empty to hide the box."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:48
+msgid "Or an email address"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:48
+msgid "Used when there is no contact page."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:49
+#: assets/js/blocks-editor.js:54
+msgid "Button"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:50
+#: assets/js/blocks-editor.js:53
+msgid "Text"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:52
+msgid "Readers"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:53
+msgid "Who can see drafts"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:53
+msgid "Drafts show in the help center, marked “Draft”, only to these people. Search engines never see them."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:54
+msgid "Colours"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:54
+msgid "“Match each reader” follows their light or dark system setting on help center pages."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:55
+msgid "Count views"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:55
+msgid "Count how often each article is read. Editors, bots and prefetches aren’t counted, and nothing is stored about readers."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:57
+msgid "AI agents"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:58
+msgid "Markdown"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:58
+msgid "Serve each published article as Markdown: add .md to its address."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:59
+msgid "llms.txt"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:59
+msgid "Publish llms.txt and llms-full.txt, a map and the full text of the help center for AI agents."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:60
+msgid "At the site root"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:60
+msgid "Also serve them at /llms.txt. Turn this off if another plugin or a file already does."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:61
+msgid "Let AI agents draft articles"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:61
+msgid "Adds the “save draft” ability. Agents act as the signed-in user, only help center editors may use it, and it never publishes."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:62
+msgid "MCP server"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:62
+msgid "When the MCP Adapter plugin is active, offer a help center server at /wp-json/ruvelo-help-center/mcp."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:64
+msgid "When you delete the plugin"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:65
+msgid "Delete everything"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:65
+msgid "Delete all articles, categories, votes and settings when the plugin is deleted. Off by default, so your content is safe."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:131
+msgid "Open llms.txt"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:137
+msgid "People who can write posts"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:138
+msgid "Any signed-in user (for an internal help center)"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:143
+msgid "Match each reader (light or dark)"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:144
+msgid "Always light"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:145
+msgid "Always dark"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:175
+msgid "Save changes"
+msgstr ""
+
+#: src/Admin/SetupPage.php:42
+msgid "Your help center works as soon as you publish an article. These steps make it yours."
+msgstr ""
+
+#: src/Admin/SetupPage.php:46
+msgid "Home page created. Open it, or edit it like any page."
+msgstr ""
+
+#: src/Admin/SetupPage.php:52
+#: src/Admin/SetupPage.php:63
+msgid "Create the home page"
+msgstr ""
+
+#. translators: %s: page address
+#: src/Admin/SetupPage.php:56
+#, php-format
+msgid "Your help center home is at %s. It’s a page made of blocks: a search box, your categories, popular articles and a contact box."
+msgstr ""
+
+#: src/Admin/SetupPage.php:57
+msgid "Open the help center"
+msgstr ""
+
+#: src/Admin/SetupPage.php:57
+msgid "Edit the page"
+msgstr ""
+
+#. translators: %s: address of the help center
+#: src/Admin/SetupPage.php:60
+#, php-format
+msgid "Right now %s shows a built-in home page. Create a page instead, to edit its headline, blocks and layout like any other page."
+msgstr ""
+
+#: src/Admin/SetupPage.php:69
+msgid "Add categories and write articles"
+msgstr ""
+
+#. translators: 1: number of categories, 2: number of published articles
+#: src/Admin/SetupPage.php:71
+#, php-format
+msgid "%1$s categories, %2$s published articles. Give each category an emoji and a position; link articles to each other with [[Their title]]."
+msgstr ""
+
+#: src/Admin/SetupPage.php:72
+#: src/Content/ArticleType.php:44
+msgid "Categories"
+msgstr ""
+
+#: src/Admin/SetupPage.php:73
+#: src/Content/ArticleType.php:71
+msgid "Write an article"
+msgstr ""
+
+#: src/Admin/SetupPage.php:74
+msgid "Moving from another tool? Import a folder of Markdown files, one sub-folder per category:"
+msgstr ""
+
+#: src/Admin/SetupPage.php:78
+msgid "Say where to get more help"
+msgstr ""
+
+#: src/Admin/SetupPage.php:79
+msgid "Add a contact page or email, and every article ends with a “Still need help?” box."
+msgstr ""
+
+#: src/Admin/SetupPage.php:84
+msgid "Let AI agents read it"
+msgstr ""
+
+#: src/Admin/SetupPage.php:85
+msgid "Nothing to install. Every article is available as Markdown, llms.txt maps the help center, and these abilities are registered with WordPress for agents and the MCP Adapter:"
+msgstr ""
+
+#: src/Admin/SetupPage.php:97
+msgid "AI settings"
+msgstr ""
+
+#. translators: %s: an address
+#: src/Admin/SetupPage.php:101
+#, php-format
+msgid "MCP server: %s"
+msgstr ""
+
+#: src/Admin/SetupPage.php:110
+msgid "(done)"
+msgstr ""
+
+#: src/Admin/SetupPage.php:116
+msgid "You can’t create pages on this site."
+msgstr ""
+
+#: src/Ai/Abilities.php:62
+#: src/Ai/McpServer.php:46
+#: src/Blocks/Blocks.php:57
+#: src/Blocks/Blocks.php:91
+msgid "Help center"
+msgstr ""
+
+#: src/Ai/Abilities.php:63
+msgid "Search and read help center articles, and draft new ones."
+msgstr ""
+
+#: src/Ai/Abilities.php:84
+msgid "Search help articles"
+msgstr ""
+
+#: src/Ai/Abilities.php:85
+msgid "Search the help center. Every word must appear in the article; titles rank first. Returns published articles (and drafts, for people allowed to see them) with a short excerpt and the URL to send a customer. Read the best match with get-article before answering."
+msgstr ""
+
+#: src/Ai/Abilities.php:90
+msgid "What to search for, like \"refund annual plan\"."
+msgstr ""
+
+#: src/Ai/Abilities.php:91
+msgid "Only search this category (slug or name)."
+msgstr ""
+
+#: src/Ai/Abilities.php:113
+msgid "Read a help article"
+msgstr ""
+
+#: src/Ai/Abilities.php:114
+msgid "Read one help center article as Markdown, by slug, ID or exact title. Includes its URL, category and the date it was last updated. Links to other articles are ordinary Markdown links."
+msgstr ""
+
+#: src/Ai/Abilities.php:119
+msgid "The article’s slug (like \"download-an-invoice\"), ID or exact title."
+msgstr ""
+
+#: src/Ai/Abilities.php:140
+msgid "List help categories"
+msgstr ""
+
+#: src/Ai/Abilities.php:141
+msgid "Every help center category, in order, with its description, URL and number of published articles. Use it to see what the help center covers."
+msgstr ""
+
+#: src/Ai/Abilities.php:146
+msgid "Also list each category’s article titles and slugs."
+msgstr ""
+
+#: src/Ai/Abilities.php:185
+msgid "Draft a help article"
+msgstr ""
+
+#: src/Ai/Abilities.php:186
+msgid "Save a help article as a draft for an editor to review. Creates a new draft, or updates an existing draft when you give its slug. Published articles are never changed: a person publishes from the editor."
+msgstr ""
+
+#: src/Ai/Abilities.php:192
+msgid "The article in Markdown. Link to other articles with [[Their title]]."
+msgstr ""
+
+#: src/Ai/Abilities.php:193
+msgid "Category slug or name."
+msgstr ""
+
+#: src/Ai/Abilities.php:195
+msgid "To update a draft: its slug."
+msgstr ""
+
+#: src/Ai/Abilities.php:253
+msgid "No published article matches that. Search first, then read one of the results by its slug."
+msgstr ""
+
+#: src/Ai/Abilities.php:305
+msgid "Drafting by AI agents is turned off in Help Center → Settings."
+msgstr ""
+
+#: src/Ai/Abilities.php:309
+msgid "Only help center editors can draft articles."
+msgstr ""
+
+#: src/Ai/Abilities.php:330
+msgid "No article has that slug. Leave the slug out to create a new draft."
+msgstr ""
+
+#: src/Ai/Abilities.php:334
+msgid "That article is published, and agents only change drafts. Create a new draft instead, and an editor will merge it."
+msgstr ""
+
+#: src/Ai/Abilities.php:338
+msgid "You can’t edit that draft."
+msgstr ""
+
+#: src/Ai/Abilities.php:341
+msgid "An article with that title already exists. Read it, or give a different title."
+msgstr ""
+
+#. translators: 1: URL of llms-full.txt
+#: src/Ai/LlmsTxt.php:32
+#, php-format
+msgid "Every article is also available as Markdown: add .md to its address. The full text of every article is in %s."
+msgstr ""
+
+#: src/Ai/LlmsTxt.php:102
+#: src/Blocks/Render.php:385
+msgid "Other articles"
+msgstr ""
+
+#. translators: 1: site name, 2: help center URL
+#: src/Ai/LlmsTxt.php:122
+#, php-format
+msgid "Answers and how-tos for %1$s, from %2$s."
+msgstr ""
+
+#: src/Ai/McpServer.php:47
+msgid "Search and read the help center’s articles, and draft new ones for editors to review."
+msgstr ""
+
+#: src/Blocks/Blocks.php:59
+#: src/Templates/Templates.php:52
+msgid "Help center home"
+msgstr ""
+
+#: src/Blocks/Blocks.php:60
+msgid "A “How can we help?” search, the help categories, popular articles and a contact box."
+msgstr ""
+
+#: src/Blocks/Render.php:32
+msgid "Search for answers…"
+msgstr ""
+
+#: src/Blocks/Render.php:32
+#: src/Blocks/Render.php:354
+msgid "Search articles…"
+msgstr ""
+
+#: src/Blocks/Render.php:49
+msgid "Popular:"
+msgstr ""
+
+#: src/Blocks/Render.php:67
+msgid "Search the help center"
+msgstr ""
+
+#: src/Blocks/Render.php:72
+msgid "Suggested articles"
+msgstr ""
+
+#: src/Blocks/Render.php:90
+#: assets/js/blocks-editor.js:32
+msgid "Browse by topic"
+msgstr ""
+
+#: src/Blocks/Render.php:95
+msgid "There are no help categories yet."
+msgstr ""
+
+#: src/Blocks/Render.php:95
+msgid "Create the first one"
+msgstr ""
+
+#: src/Blocks/Render.php:96
+msgid "There are no articles yet. Check back soon."
+msgstr ""
+
+#. translators: %s: number of articles
+#: src/Blocks/Render.php:115
+#: src/Blocks/Render.php:582
+#, php-format
+msgid "%s article"
+msgid_plural "%s articles"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Blocks/Render.php:138
+#: assets/js/blocks-editor.js:38
+msgid "Popular articles"
+msgstr ""
+
+#. translators: %s: category name, lowercased
+#: src/Blocks/Render.php:180
+#, php-format
+msgid "All %s articles"
+msgstr ""
+
+#: src/Blocks/Render.php:183
+msgid "Related help"
+msgstr ""
+
+#: src/Blocks/Render.php:186
+#: src/Blocks/Render.php:613
+msgid "More results"
+msgstr ""
+
+#: src/Blocks/Render.php:189
+#: src/Content/ArticleType.php:66
+msgid "Help articles"
+msgstr ""
+
+#: src/Blocks/Render.php:192
+#: src/Blocks/Render.php:215
+msgid "Visit the help center"
+msgstr ""
+
+#: src/Blocks/Render.php:197
+msgid "No articles here yet."
+msgstr ""
+
+#: src/Blocks/Render.php:215
+#: src/Blocks/Render.php:390
+msgid "No articles yet."
+msgstr ""
+
+#: src/Blocks/Render.php:243
+msgid "“Still need help?” appears once you add a contact page or email in Help Center → Settings."
+msgstr ""
+
+#: src/Blocks/Render.php:252
+#: assets/js/blocks-editor.js:52
+msgid "Still need help?"
+msgstr ""
+
+#: src/Blocks/Render.php:279
+msgid "That didn’t go through. Please try again."
+msgstr ""
+
+#: src/Blocks/Render.php:287
+msgid "Leave this empty"
+msgstr ""
+
+#: src/Blocks/Render.php:294
+#: assets/js/blocks-editor.js:58
+msgid "Was this article helpful?"
+msgstr ""
+
+#: src/Blocks/Render.php:296
+msgid "Yes"
+msgstr ""
+
+#: src/Blocks/Render.php:301
+msgid "Thanks! Glad it helped."
+msgstr ""
+
+#: src/Blocks/Render.php:304
+msgid "Sorry about that. What were you looking for?"
+msgstr ""
+
+#: src/Blocks/Render.php:305
+msgid "Tell us what was missing or unclear"
+msgstr ""
+
+#: src/Blocks/Render.php:305
+msgid "(optional)"
+msgstr ""
+
+#: src/Blocks/Render.php:306
+msgid "I wanted to know how to…"
+msgstr ""
+
+#: src/Blocks/Render.php:307
+msgid "Send feedback"
+msgstr ""
+
+#: src/Blocks/Render.php:309
+msgid "Thanks for telling us. We’ll use it to improve this article."
+msgstr ""
+
+#: src/Blocks/Render.php:332
+#: assets/js/blocks-editor.js:61
+msgid "On this page"
+msgstr ""
+
+#: src/Blocks/Render.php:357
+msgid "Browse articles"
+msgstr ""
+
+#: src/Blocks/Render.php:358
+msgid "Help articles by category"
+msgstr ""
+
+#: src/Blocks/Render.php:427
+#: src/Blocks/Render.php:573
+msgid "Search"
+msgstr ""
+
+#: src/Blocks/Render.php:439
+msgid "Breadcrumbs"
+msgstr ""
+
+#: src/Blocks/Render.php:456
+msgid "Draft: readers can’t see this yet"
+msgstr ""
+
+#. translators: %s: a date
+#: src/Blocks/Render.php:462
+#, php-format
+msgid "Updated %s"
+msgstr ""
+
+#: src/Blocks/Render.php:470
+msgid "Edit"
+msgstr ""
+
+#: src/Blocks/Render.php:526
+msgid "New article here"
+msgstr ""
+
+#: src/Blocks/Render.php:574
+msgid "Type a question or a few words in the search box."
+msgstr ""
+
+#. translators: %s: what the visitor searched for
+#: src/Blocks/Render.php:578
+#, php-format
+msgid "Results for “%s”"
+msgstr ""
+
+#. translators: %s: what the visitor searched for
+#: src/Blocks/Render.php:589
+#, php-format
+msgid "No articles match “%s”. Try fewer or different words, or browse the topics."
+msgstr ""
+
+#: src/Blocks/Render.php:609
+msgid "Previous"
+msgstr ""
+
+#: src/Blocks/Render.php:610
+msgid "Next"
+msgstr ""
+
+#: src/Blocks/Render.php:633
+msgid "Draft"
+msgstr ""
+
+#. translators: %s: an article title
+#: src/Content/ArticleLinks.php:98
+#, php-format
+msgid "No article called “%s” yet. Write it."
+msgstr ""
+
+#: src/Content/ArticleType.php:42
+msgid "Help categories"
+msgstr ""
+
+#: src/Content/ArticleType.php:43
+#: src/Templates/Templates.php:34
+msgid "Help category"
+msgstr ""
+
+#: src/Content/ArticleType.php:46
+msgid "Edit category"
+msgstr ""
+
+#: src/Content/ArticleType.php:47
+msgid "View category"
+msgstr ""
+
+#: src/Content/ArticleType.php:48
+msgid "Save category"
+msgstr ""
+
+#: src/Content/ArticleType.php:49
+msgid "Add a category"
+msgstr ""
+
+#: src/Content/ArticleType.php:50
+msgid "New category name"
+msgstr ""
+
+#: src/Content/ArticleType.php:51
+msgid "Parent category"
+msgstr ""
+
+#: src/Content/ArticleType.php:52
+msgid "Search categories"
+msgstr ""
+
+#: src/Content/ArticleType.php:53
+msgid "No categories yet."
+msgstr ""
+
+#: src/Content/ArticleType.php:54
+msgid "Back to categories"
+msgstr ""
+
+#: src/Content/ArticleType.php:67
+#: src/Templates/Templates.php:28
+msgid "Help article"
+msgstr ""
+
+#: src/Content/ArticleType.php:68
+#: src/Settings.php:55
+msgid "Help Center"
+msgstr ""
+
+#: src/Content/ArticleType.php:69
+#: assets/js/blocks-editor.js:45
+#: assets/js/blocks-editor.js:69
+msgid "Articles"
+msgstr ""
+
+#: src/Content/ArticleType.php:70
+msgid "Add article"
+msgstr ""
+
+#: src/Content/ArticleType.php:72
+msgid "Edit article"
+msgstr ""
+
+#: src/Content/ArticleType.php:73
+msgid "New article"
+msgstr ""
+
+#: src/Content/ArticleType.php:74
+msgid "View article"
+msgstr ""
+
+#: src/Content/ArticleType.php:75
+msgid "View help center"
+msgstr ""
+
+#: src/Content/ArticleType.php:76
+msgid "Search articles"
+msgstr ""
+
+#: src/Content/ArticleType.php:77
+msgid "No articles yet. Write the first one."
+msgstr ""
+
+#: src/Content/ArticleType.php:78
+msgid "No articles in the trash."
+msgstr ""
+
+#: src/Content/ArticleType.php:79
+msgid "Article published."
+msgstr ""
+
+#: src/Content/ArticleType.php:80
+msgid "Article updated."
+msgstr ""
+
+#: src/Content/ArticleType.php:81
+msgid "Article reverted to draft."
+msgstr ""
+
+#: src/Content/ArticleType.php:82
+msgid "Article scheduled."
+msgstr ""
+
+#: src/Content/ArticleType.php:83
+msgid "Help article link"
+msgstr ""
+
+#: src/Content/ArticleType.php:85
+msgid "Answers and how-tos in the help center."
+msgstr ""
+
+#: src/Content/ArticleType.php:97
+msgid "Start with the answer, in one or two sentences…"
+msgstr ""
+
+#: src/Feedback/Handler.php:28
+#: src/Http/RestController.php:111
+msgid "That article doesn’t exist, or isn’t published."
+msgstr ""
+
+#. translators: %d: maximum number of characters
+#: src/Feedback/Handler.php:40
+#, php-format
+msgid "Keep it under %d characters, please."
+msgstr ""
+
+#: src/Feedback/Handler.php:44
+msgid "Choose Yes or No."
+msgstr ""
+
+#: src/Feedback/Handler.php:50
+msgid "That’s a lot of feedback at once. Try again in a minute."
+msgstr ""
+
+#: src/Http/RestController.php:122
+msgid "That article doesn’t exist."
+msgstr ""
+
+#: src/Http/Routes.php:230
+msgid "This article in Markdown"
+msgstr ""
+
+#. translators: %s: URL of the article
+#: src/Markdown/Documents.php:37
+#, php-format
+msgid "URL: %s"
+msgstr ""
+
+#. translators: %s: category name
+#: src/Markdown/Documents.php:42
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#. translators: %s: date the article was last updated, like 2026-10-09
+#: src/Markdown/Documents.php:46
+#, php-format
+msgid "Updated: %s"
+msgstr ""
+
+#: src/Markdown/Documents.php:49
+msgid "Status: draft (not visible to readers)"
+msgstr ""
+
+#. translators: %s: a folder path
+#: src/Markdown/Documents.php:154
+#, php-format
+msgid "%s is not a folder."
+msgstr ""
+
+#: src/Plugin.php:102
+msgid "Published"
+msgstr ""
+
+#: src/Plugin.php:103
+msgid "Drafts"
+msgstr ""
+
+#. translators: 1: category name, 2: help center name
+#: src/Seo.php:55
+#, php-format
+msgid "Articles about %1$s in the %2$s."
+msgstr ""
+
+#. translators: %s: help center name
+#: src/Seo.php:61
+#, php-format
+msgid "Answers, guides and how-tos from the %s."
+msgstr ""
+
+#. translators: %s: what the visitor searched for
+#: src/Seo.php:110
+#, php-format
+msgid "Search: %s"
+msgstr ""
+
+#: src/Settings.php:56
+msgid "How can we help?"
+msgstr ""
+
+#: src/Settings.php:57
+msgid "Search the help center, or browse by topic below."
+msgstr ""
+
+#: src/Settings.php:61
+msgid "Contact us"
+msgstr ""
+
+#: src/Settings.php:62
+msgid "Our support team usually answers within one working day."
+msgstr ""
+
+#: src/Setup.php:53
+msgid "The home page could not be created."
+msgstr ""
+
+#: src/Templates/Templates.php:29
+msgid "A help article in a docs layout: the help menu, the article, and an “On this page” outline."
+msgstr ""
+
+#: src/Templates/Templates.php:35
+msgid "The articles in one help category."
+msgstr ""
+
+#: src/Templates/Templates.php:40
+msgid "Help search results"
+msgstr ""
+
+#: src/Templates/Templates.php:41
+msgid "Results of a help center search."
+msgstr ""
+
+#: src/Templates/Templates.php:46
+msgid "Help center home (no page)"
+msgstr ""
+
+#: src/Templates/Templates.php:47
+msgid "The help center home, used until you create a home page from Help Center → Get started."
+msgstr ""
+
+#: src/Templates/Templates.php:53
+msgid "A full-width page for the help center home: no page title, room for the search hero."
+msgstr ""
+
+#: assets/js/blocks-editor.js:22
+#: assets/js/blocks-editor.js:46
+msgid "Style"
+msgstr ""
+
+#: assets/js/blocks-editor.js:23
+msgid "Hero, with a headline"
+msgstr ""
+
+#: assets/js/blocks-editor.js:24
+msgid "Compact search box"
+msgstr ""
+
+#: assets/js/blocks-editor.js:26
+msgid "Leave empty to use the one from the settings."
+msgstr ""
+
+#: assets/js/blocks-editor.js:28
+msgid "Placeholder"
+msgstr ""
+
+#: assets/js/blocks-editor.js:29
+msgid "Show popular articles under the box"
+msgstr ""
+
+#: assets/js/blocks-editor.js:32
+#: assets/js/blocks-editor.js:38
+#: assets/js/blocks-editor.js:44
+#: assets/js/blocks-editor.js:52
+#: assets/js/blocks-editor.js:61
+#: assets/js/blocks-editor.js:68
+msgid "Heading"
+msgstr ""
+
+#: assets/js/blocks-editor.js:33
+msgid "Only sub-categories of"
+msgstr ""
+
+#: assets/js/blocks-editor.js:33
+msgid "A category slug. Leave empty for the top level."
+msgstr ""
+
+#: assets/js/blocks-editor.js:34
+msgid "Show descriptions"
+msgstr ""
+
+#: assets/js/blocks-editor.js:35
+msgid "Show article counts"
+msgstr ""
+
+#: assets/js/blocks-editor.js:39
+msgid "Articles (0 = from the settings)"
+msgstr ""
+
+#: assets/js/blocks-editor.js:42
+msgid "Category"
+msgstr ""
+
+#: assets/js/blocks-editor.js:42
+msgid "A category slug or name, like billing-invoices."
+msgstr ""
+
+#: assets/js/blocks-editor.js:43
+msgid "Or a search"
+msgstr ""
+
+#: assets/js/blocks-editor.js:43
+msgid "Show the best matches for these words instead, like “refund”."
+msgstr ""
+
+#: assets/js/blocks-editor.js:47
+msgid "Compact box"
+msgstr ""
+
+#: assets/js/blocks-editor.js:48
+msgid "List with summaries"
+msgstr ""
+
+#: assets/js/blocks-editor.js:55
+msgid "Link"
+msgstr ""
+
+#: assets/js/blocks-editor.js:55
+msgid "Leave empty to use the contact page or email from the settings."
+msgstr ""
+
+#: assets/js/blocks-editor.js:58
+msgid "Question"
+msgstr ""
+
+#: assets/js/blocks-editor.js:62
+msgid "Show from this many headings"
+msgstr ""
+
+#: assets/js/blocks-editor.js:65
+msgid "Show a search box above the menu"
+msgstr ""
+
+#: assets/js/blocks-editor.js:72
+msgid "Results per page"
+msgstr ""
+
+#: assets/js/help-center.js:72
+msgid "No articles match yet. Press Enter to search everything."
+msgstr ""
+
+#. translators: %s: what the visitor typed
+#: assets/js/help-center.js:94
+#, js-format
+msgid "See all results for “%s”"
+msgstr ""
+
+#: assets/js/help-center.js:104
+msgid "No suggestions."
+msgstr ""
+
+#: assets/js/help-center.js:106
+#, js-format
+msgid "%s suggestions. Use the up and down arrows to choose one."
+msgstr ""
+
+#: blocks/help-article-meta/block.json
+msgctxt "block title"
+msgid "Help article details"
+msgstr ""
+
+#: blocks/help-article-meta/block.json
+msgctxt "block description"
+msgid "When the article was last updated, and an edit link for editors."
+msgstr ""
+
+#: blocks/help-article-meta/block.json
+#: blocks/help-articles/block.json
+#: blocks/help-breadcrumbs/block.json
+#: blocks/help-categories/block.json
+#: blocks/help-category-header/block.json
+#: blocks/help-contact/block.json
+#: blocks/help-navigation/block.json
+#: blocks/help-outline/block.json
+#: blocks/help-popular/block.json
+#: blocks/help-related/block.json
+#: blocks/help-search-results/block.json
+#: blocks/help-search/block.json
+#: blocks/help-vote/block.json
+msgctxt "block keyword"
+msgid "help"
+msgstr ""
+
+#: blocks/help-article-meta/block.json
+msgctxt "block keyword"
+msgid "updated"
+msgstr ""
+
+#: blocks/help-article-meta/block.json
+msgctxt "block keyword"
+msgid "date"
+msgstr ""
+
+#: blocks/help-articles/block.json
+msgctxt "block title"
+msgid "Contextual help"
+msgstr ""
+
+#: blocks/help-articles/block.json
+msgctxt "block description"
+msgid "A short list of help articles from one category or for a search, to put help where people get stuck."
+msgstr ""
+
+#: blocks/help-articles/block.json
+#: blocks/help-popular/block.json
+msgctxt "block keyword"
+msgid "articles"
+msgstr ""
+
+#: blocks/help-articles/block.json
+msgctxt "block keyword"
+msgid "contextual"
+msgstr ""
+
+#: blocks/help-articles/block.json
+#: blocks/help-search/block.json
+msgctxt "block keyword"
+msgid "faq"
+msgstr ""
+
+#: blocks/help-breadcrumbs/block.json
+msgctxt "block title"
+msgid "Help breadcrumbs"
+msgstr ""
+
+#: blocks/help-breadcrumbs/block.json
+msgctxt "block description"
+msgid "Where the current page sits in the help center."
+msgstr ""
+
+#: blocks/help-breadcrumbs/block.json
+msgctxt "block keyword"
+msgid "breadcrumbs"
+msgstr ""
+
+#: blocks/help-categories/block.json
+msgctxt "block title"
+msgid "Help categories"
+msgstr ""
+
+#: blocks/help-categories/block.json
+msgctxt "block description"
+msgid "A card for each help category, with its icon, description and number of articles."
+msgstr ""
+
+#: blocks/help-categories/block.json
+msgctxt "block keyword"
+msgid "categories"
+msgstr ""
+
+#: blocks/help-categories/block.json
+msgctxt "block keyword"
+msgid "topics"
+msgstr ""
+
+#: blocks/help-category-header/block.json
+msgctxt "block title"
+msgid "Help category header"
+msgstr ""
+
+#: blocks/help-category-header/block.json
+msgctxt "block description"
+msgid "The current category’s icon, name and description."
+msgstr ""
+
+#: blocks/help-category-header/block.json
+msgctxt "block keyword"
+msgid "category"
+msgstr ""
+
+#: blocks/help-contact/block.json
+msgctxt "block title"
+msgid "Still need help?"
+msgstr ""
+
+#: blocks/help-contact/block.json
+msgctxt "block description"
+msgid "A box that points people to your support team. Hidden until you set a contact address in the settings."
+msgstr ""
+
+#: blocks/help-contact/block.json
+msgctxt "block keyword"
+msgid "contact"
+msgstr ""
+
+#: blocks/help-contact/block.json
+msgctxt "block keyword"
+msgid "support"
+msgstr ""
+
+#: blocks/help-navigation/block.json
+msgctxt "block title"
+msgid "Help menu"
+msgstr ""
+
+#: blocks/help-navigation/block.json
+msgctxt "block description"
+msgid "The help categories and their articles, with the current one marked."
+msgstr ""
+
+#: blocks/help-navigation/block.json
+msgctxt "block keyword"
+msgid "navigation"
+msgstr ""
+
+#: blocks/help-navigation/block.json
+msgctxt "block keyword"
+msgid "sidebar"
+msgstr ""
+
+#: blocks/help-outline/block.json
+msgctxt "block title"
+msgid "On this page"
+msgstr ""
+
+#: blocks/help-outline/block.json
+msgctxt "block description"
+msgid "The article’s headings, to jump to a section."
+msgstr ""
+
+#: blocks/help-outline/block.json
+msgctxt "block keyword"
+msgid "outline"
+msgstr ""
+
+#: blocks/help-outline/block.json
+msgctxt "block keyword"
+msgid "table of contents"
+msgstr ""
+
+#: blocks/help-outline/block.json
+msgctxt "block keyword"
+msgid "toc"
+msgstr ""
+
+#: blocks/help-popular/block.json
+msgctxt "block title"
+msgid "Popular help articles"
+msgstr ""
+
+#: blocks/help-popular/block.json
+msgctxt "block description"
+msgid "The articles people read most."
+msgstr ""
+
+#: blocks/help-popular/block.json
+msgctxt "block keyword"
+msgid "popular"
+msgstr ""
+
+#: blocks/help-related/block.json
+msgctxt "block title"
+msgid "Related help articles"
+msgstr ""
+
+#: blocks/help-related/block.json
+msgctxt "block description"
+msgid "Articles to read next: the ones an editor picked, or others in the same category."
+msgstr ""
+
+#: blocks/help-related/block.json
+msgctxt "block keyword"
+msgid "related"
+msgstr ""
+
+#: blocks/help-search-results/block.json
+msgctxt "block title"
+msgid "Help search results"
+msgstr ""
+
+#: blocks/help-search-results/block.json
+msgctxt "block description"
+msgid "Results for the current help search, with the matching words highlighted."
+msgstr ""
+
+#: blocks/help-search-results/block.json
+#: blocks/help-search/block.json
+msgctxt "block keyword"
+msgid "search"
+msgstr ""
+
+#: blocks/help-search-results/block.json
+msgctxt "block keyword"
+msgid "results"
+msgstr ""
+
+#: blocks/help-search/block.json
+msgctxt "block title"
+msgid "Help search"
+msgstr ""
+
+#: blocks/help-search/block.json
+msgctxt "block description"
+msgid "A “How can we help?” search box that suggests articles as people type."
+msgstr ""
+
+#: blocks/help-search/block.json
+msgctxt "block keyword"
+msgid "knowledge base"
+msgstr ""
+
+#: blocks/help-vote/block.json
+msgctxt "block title"
+msgid "Was this helpful?"
+msgstr ""
+
+#: blocks/help-vote/block.json
+msgctxt "block description"
+msgid "Yes and No buttons under an article, with a short comment box after a No."
+msgstr ""
+
+#: blocks/help-vote/block.json
+msgctxt "block keyword"
+msgid "feedback"
+msgstr ""
+
+#: blocks/help-vote/block.json
+msgctxt "block keyword"
+msgid "vote"
+msgstr ""
+
+#: blocks/help-vote/block.json
+msgctxt "block keyword"
+msgid "helpful"
+msgstr ""

@@ -1,0 +1,26 @@
+# What the release zip leaves out (bin/build-zip.sh copies an allow-list; this is for tools that read .distignore).
+/.git
+/.github
+/.wordpress-org
+/.wp
+/bin
+/build
+/demo
+/site
+/tests
+/vendor
+/node_modules
+.editorconfig
+.gitattributes
+.gitignore
+.distignore
+blueprint.json
+composer.json
+composer.lock
+phpcs.xml.dist
+phpstan.neon.dist
+phpunit.xml.dist
+pint.json
+CONTRIBUTING.md
+CHANGELOG.md
+README.md
