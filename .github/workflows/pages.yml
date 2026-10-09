@@ -30,7 +30,7 @@ jobs:
           cp .wordpress-org/*.png build/site/art/
           cp blueprint.json build/site/
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: build/site
 
