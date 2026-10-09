@@ -105,6 +105,8 @@ final class Abilities
             'permission_callback' => '__return_true',
             'meta' => [
                 'public' => true,
+                // WordPress 7.0 exposes abilities over REST through show_in_rest; 7.1 added public.
+                'show_in_rest' => true,
                 'annotations' => ['readonly' => true, 'destructive' => false, 'idempotent' => true],
             ],
         ]);
@@ -132,6 +134,8 @@ final class Abilities
             'permission_callback' => '__return_true',
             'meta' => [
                 'public' => true,
+                // WordPress 7.0 exposes abilities over REST through show_in_rest; 7.1 added public.
+                'show_in_rest' => true,
                 'annotations' => ['readonly' => true, 'destructive' => false, 'idempotent' => true],
             ],
         ]);
@@ -173,6 +177,8 @@ final class Abilities
             'permission_callback' => '__return_true',
             'meta' => [
                 'public' => true,
+                // WordPress 7.0 exposes abilities over REST through show_in_rest; 7.1 added public.
+                'show_in_rest' => true,
                 'annotations' => ['readonly' => true, 'destructive' => false, 'idempotent' => true],
             ],
         ]);
@@ -212,6 +218,8 @@ final class Abilities
             'permission_callback' => [self::class, 'canDraft'],
             'meta' => [
                 'public' => true,
+                // WordPress 7.0 exposes abilities over REST through show_in_rest; 7.1 added public.
+                'show_in_rest' => true,
                 'annotations' => ['readonly' => false, 'destructive' => false, 'idempotent' => false],
             ],
         ]);
