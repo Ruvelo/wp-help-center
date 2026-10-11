@@ -6,8 +6,11 @@
 <title>Ruvelo Help Center for WordPress</title>
 <meta name="description" content="A free help center for WordPress, ready for AI agents: instant search, “Was this helpful?”, docs-style articles, Markdown, llms.txt and abilities.">
 <link rel="icon" href="art/icon-128x128.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono&display=swap">
+<link rel="preload" href="fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face { font-family: "Geist"; src: url("fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Geist Mono"; src: url("fonts/GeistMono-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+</style>
 <style>
 	:root { --accent: #3d4eff; --accent-soft: #eef0ff; --bg: #fff; --subtle: #f8f8fc; --line: #e4e4ef; --ink: #16162a; --text-2: #4b4b63; --text-3: #74748b; --night: #11111c; color-scheme: light; }
 	@media (prefers-color-scheme: dark) { :root { --accent: #8f9bff; --accent-soft: #1e2150; --bg: #11111c; --subtle: #171725; --line: #2a2a3f; --ink: #f1f1f8; --text-2: #b6b6cc; --text-3: #8787a3; --night: #0b0b14; color-scheme: dark; } }
@@ -59,14 +62,14 @@
 			<a class="btn btn--primary" href="https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Ruvelo/wp-help-center/main/blueprint.json">Try it live in WordPress Playground →</a>
 			<a class="btn" href="https://github.com/Ruvelo/wp-help-center">Read the docs</a>
 		</div>
-		<img class="shot main-shot" src="art/screenshot-1.png" alt="The help center home: a How can we help? search box, topic cards and popular articles">
+		<img loading="lazy" class="shot main-shot" src="art/screenshot-1.png" alt="The help center home: a How can we help? search box, topic cards and popular articles">
 	</section>
 
 	<section class="grid">
-		<div><img class="shot" src="art/screenshot-3.png" alt="Search suggestions with the matching words highlighted"><h2>Answers as they type</h2><p>Suggestions from titles and text, highlighted, keyboard and screen-reader friendly. An exact title goes straight to the article.</p></div>
-		<div><img class="shot" src="art/screenshot-2.png" alt="An article in a docs layout"><h2>Articles that read like good docs</h2><p>The help menu, breadcrumbs, an “Updated” date and an “On this page” outline. Related articles and a contact box underneath.</p></div>
-		<div><img class="shot" src="art/screenshot-4.png" alt="The Was this helpful? box after a No"><h2>Hear what’s missing</h2><p>One vote per reader, no cookies, and a short comment after a “No”, collected on one screen.</p></div>
-		<div><img class="shot" src="art/screenshot-6.png" alt="The article list with views and helpful share"><h2>See what works</h2><p>Views and the share of readers who found each article helpful, right in the article list.</p></div>
+		<div><img loading="lazy" class="shot" src="art/screenshot-3.png" alt="Search suggestions with the matching words highlighted"><h2>Answers as they type</h2><p>Suggestions from titles and text, highlighted, keyboard and screen-reader friendly. An exact title goes straight to the article.</p></div>
+		<div><img loading="lazy" class="shot" src="art/screenshot-2.png" alt="An article in a docs layout"><h2>Articles that read like good docs</h2><p>The help menu, breadcrumbs, an “Updated” date and an “On this page” outline. Related articles and a contact box underneath.</p></div>
+		<div><img loading="lazy" class="shot" src="art/screenshot-4.png" alt="The Was this helpful? box after a No"><h2>Hear what’s missing</h2><p>One vote per reader, no cookies, and a short comment after a “No”, collected on one screen.</p></div>
+		<div><img loading="lazy" class="shot" src="art/screenshot-6.png" alt="The article list with views and helpful share"><h2>See what works</h2><p>Views and the share of readers who found each article helpful, right in the article list.</p></div>
 	</section>
 </div>
 
