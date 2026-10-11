@@ -23,7 +23,7 @@
 **A free help center for WordPress, ready for AI agents.** Articles in categories, instant search, "Was this helpful?", docs-style pages, and Markdown, `llms.txt` and abilities so AI agents can read it too. No pro version, no upsells, no tracking.
 
 ```
-wp plugin install ruvelo-help-center --activate
+wp plugin install https://github.com/Ruvelo/wp-help-center/releases/latest/download/ruvelo-help-center.zip --activate
 wp help-center setup
 ```
 
@@ -103,7 +103,7 @@ It's the WordPress sibling of [ruvelo/laravel-help-center](https://github.com/Ru
 
 ## Install
 
-From WordPress: **Plugins → Add New**, search for "Ruvelo Help Center". Or with Composer, on a [Composer-managed site](https://roots.io/bedrock/):
+From WordPress: download [ruvelo-help-center.zip](https://github.com/Ruvelo/wp-help-center/releases/latest/download/ruvelo-help-center.zip), then **Plugins → Add New → Upload Plugin**. A WordPress.org listing is on its way. Or with Composer, on a [Composer-managed site](https://roots.io/bedrock/):
 
 ```
 composer require ruvelo/wp-help-center
